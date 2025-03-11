@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    width: 40%;
+    margin: auto;
+    background: rgba(246, 253, 254, 0.713);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(90, 105, 161, 0.488);
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant: small-caps;
+    size: larger;
+    text-shadow: 0px 0px 10px #65656581;
+    letter-spacing: 0.8rem;
+}
+
+button {
+    background-color: #595f98;
+    
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+#start-quizz-btn {
+    margin-top: 0em;
+}
+
+
+button:hover {
+    background-color: #4477cfb0;
+    font-size: large;
+}
+
+#trueBtn {
+    background-color: green;
+}
+
+#trueBtn:hover {
+    background-color: rgb(66, 211, 66);
+}
+
+#falseBtn {
+    background-color: red
+}
+
+#falseBtn:hover {
+    background-color: rgb(239, 95, 95)
+}
