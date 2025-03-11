@@ -40,7 +40,7 @@ function showQuestion() {
 
         if (positiveCounter >= negativeCounter) {
             resultContainer.innerHTML = `
-            <h2>✨¡FELICIDADES!✨</h2>
+            <h2>¡FELICIDADES!</h2>
             <h3>¡Has acabado el juego!</h3>
             <br>
             Sherlock Boolean Holmes 🕵️‍♀️ dice:
@@ -55,7 +55,8 @@ function showQuestion() {
 
         } else {
             resultContainer.innerHTML = `
-            <h2>✨¡Felicidades! ¡Has acabado el juego!✨</h2>
+            <h2>¡Felicidades!</h2>
+            <h3>¡Has acabado el juego!</h3>
             <br>
             Sherlock Boolean Holmes 🕵️‍♀️ dice:
             <br>
