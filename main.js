@@ -18,6 +18,7 @@ const questionsArr = [
 startQuizzBtn.addEventListener("click", showQuestion);
 
 function showQuestion() {
+
     let questionIndex = questionsArr[currentQuestionIndex];
 
     if (currentQuestionIndex < questionsArr.length) {
@@ -71,6 +72,7 @@ function showQuestion() {
 }
 
 function checkAnswer(userAnswer, trueBtn, falseBtn) {
+
     let correctAnswer = questionsArr[currentQuestionIndex].answer;
     const result = document.createElement("p");
     
