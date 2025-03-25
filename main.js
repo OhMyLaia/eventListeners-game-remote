@@ -1,9 +1,13 @@
 const resultContainer = document.getElementById("result-span");
 const questionsContainer = document.getElementById("questions-span");
 const startQuizzBtn = document.getElementById("start-quizz-btn");
+const timerContainer = document.getElementById("timer-span");
 let currentQuestionIndex = 0;
 let positiveCounter = 0;
 let negativeCounter = 0;
+let seconds = 0;
+let minutes = 0;
+let timer;
 
 const questionsArr = [
     { question: "El método addEventListener solo funciona con eventos de mouse.", answer: false },
@@ -15,7 +19,10 @@ const questionsArr = [
     { question: "Los eventos en JavaScript solo pueden usarse con addEventListener y no de otra forma.", answer: false }
 ];
 
-startQuizzBtn.addEventListener("click", showQuestion);
+startQuizzBtn.addEventListener("click", () => {
+    showQuestion();
+    startTimer();
+});
 
 function showQuestion() {
 
@@ -38,6 +45,8 @@ function showQuestion() {
         falseBtn.addEventListener("click", () => checkAnswer(false, trueBtn, falseBtn));
 
     } else {
+
+        stopTimer();
 
         if (positiveCounter >= negativeCounter) {
             resultContainer.innerHTML = `
@@ -93,4 +102,25 @@ function checkAnswer(userAnswer, trueBtn, falseBtn) {
     setTimeout(() => {
         showQuestion();
     }, 1000);
+}
+
+function startTimer() {
+    if (!timer) {
+        timer = setInterval(() => {
+            seconds++;
+            if (seconds >= 60) {
+                minutes = 1;
+                seconds = 0;
+                seconds++;
+            }
+            seconds < 10 ?
+            timerContainer.innerHTML = `${minutes}:0${seconds} ⏰`:
+            timerContainer.innerHTML = `${minutes}:${seconds} ⏰`;
+        }, 1000);
+    }
+}
+
+function stopTimer() {
+    clearInterval(timer);
+    timer = null;
 }
