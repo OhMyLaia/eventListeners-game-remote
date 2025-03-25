@@ -53,12 +53,9 @@ function showQuestion() {
             <h2>¡FELICIDADES!</h2>
             <h3>¡Has acabado el juego!</h3>
             <br>
-            Sherlock Boolean Holmes 🕵️‍♀️ dice:
-            <br>
             ${positiveCounter} ✅ ${negativeCounter} ❌
             <br>
-            Como dijo un sabio una vez...
-            <br>
+            Sherlock Boolean Holmes 🕵️‍♀️ dice:
             <br>
             <i>"La mediocridad no reconoce nada superior a sí misma, pero el talento reconoce al genio al instante."</i>🏆
             `;
@@ -68,11 +65,9 @@ function showQuestion() {
             <h2>¡Felicidades!</h2>
             <h3>¡Has acabado el juego!</h3>
             <br>
-            Sherlock Boolean Holmes 🕵️‍♀️ dice:
-            <br>
             ${positiveCounter} ✅ ${negativeCounter} ❌
             <br>
-            Pero como dijo un sabio una vez...
+            Sherlock Boolean Holmes 🕵️‍♀️ dice:
             <br>
             <i>"La educación nunca termina, Watson. Es una serie de lecciones, con la mayor para el final."</i>📚
             `;
